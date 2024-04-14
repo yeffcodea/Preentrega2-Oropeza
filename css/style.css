@@ -25,49 +25,6 @@
         box-sizing: border-box;
     }
 
-    /*-CLASES GENERALES-*/
-    /* 
-    .boton_comprar {
-        display: flex;
-        color: black;
-        text-decoration: none;
-        font-family: "Poiret One", sans-serif;
-        font-weight: 700;
-        font-size: 10px;
-        font-style: normal;
-        color: black;
-        margin-bottom: 5px;
-        padding: 10px;
-        font-size: 17px;
-        width: 95px;
-        height: 5px;
-        justify-content: center;
-        align-items: center;
-        border: solid white 2px;
-    }
-
-
-    .boton_ir {
-        display: flex;
-        color: rgb(245, 238, 238);
-        text-decoration: none;
-        font-family: "Advent Pro", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-variation-settings: 700;
-        border-radius: 5px;
-        padding: 10px;
-        font-size: 20px;
-        width: 95px;
-        height: 5px;
-        border: solid;
-        justify-content: center;
-        align-items: center;
-    } */
-
-
-
 
     /*------------------------------------------------HEADER-----------------------------------------------------------------*/
 
@@ -173,7 +130,7 @@
     /*-----------------------------------------------------MAIN-------------------------------------------------------------*/
 
     main {
-        background-color: #F9F6F7;
+        background-color: #c5d5e755;
     }
 
     main section h3{
@@ -405,14 +362,34 @@
 
     /*----------------------------------------PRODUCTS-----------------------------------------------------*/
     
-    main .fototitulo{
+    .fototitulo {
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        background-image: url(../img/productos_cover.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         display: flex;
-        width: 1000px;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-    main .fototitulo img{
-        /* width: 755px; */
-        height: 550px;
+    main .fototitulo div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main .fototitulo div h2 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 50px;
+        font-style: normal;
+        color: white;
     }
     
     main .titulo_grilla {
@@ -434,11 +411,12 @@
 
     main .grid_productos {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
         grid-template-rows: repeat(2, 1fr);
         column-gap: 15px;
         row-gap: 15px;
         margin-left: 15px;
+        margin-right: 65px;
     }
 
     main .grid_productos .grid_item {
@@ -826,6 +804,87 @@
     /*------------------------------HOTSALE---------------------------*/
 
     /*------------------------------PRODUCTS---------------------------*/
+    @media screen and (max-width:1100px){
+        main .grid_item h4{
+            font-size: 15px;
+        }
+
+        main .filtros h4 {
+            font-size: 22px;
+        }
+    
+        main .filtros label {
+            font-size: 13px;
+        }
+
+        main .grid_item button{
+            font-size: 11px;
+        }
+
+        main .grid_productos {
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            margin-right: 65px;
+        }
+
+        .filtros {
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+    }
+
+    @media screen and (max-width:900px){
+        main .marcas div img{
+            width: 75px;
+            height: 35px;
+        }
+    }
+
+    @media screen and (max-width:680px){
+        main .grid_productos {
+            grid-template-columns: 0.5fr 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            margin-right: 85px;
+        }
+
+        .filtros {
+            grid-row-start: 1;
+            grid-row-end: 8;
+        }
+    }
+
+    @media screen and (max-width:455px){
+        main .grid_item h4{
+            font-size: 10px;
+            bottom: 35px;
+        }
+
+        main .filtros h4 {
+            font-size: 18px;
+        }
+    
+        main .filtros label {
+            font-size: 8px;
+        }
+
+        main .grid_item button{
+            font-size: 8px;
+        }
+
+        main .filtros form label input{
+            width: 9px;
+            height: 9px;
+        }
+
+        main .marcas div img{
+            width: 45px;
+            height: 20px;
+        }
+
+        main .fototitulo div h2 {
+            font-size: 35px;
+        }
+    }
 
     /*------------------------------CONTACT---------------------------*/
 
