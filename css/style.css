@@ -1,0 +1,920 @@
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Jura:wght@300..700&family=Poiret+One&family=Zen+Maru+Gothic&display=swap');
+
+    /*.poiret-one-regular {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Big+Shoulders+Display:wght@100..900&family=Jura:wght@300..700&family=Poiret+One&family=Zen+Maru+Gothic&display=swap');
+
+    /*.advent-pro-<uniquifier> {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }*/
+
+
+    /*---RESET---*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*-CLASES GENERALES-*/
+    /* 
+    .boton_comprar {
+        display: flex;
+        color: black;
+        text-decoration: none;
+        font-family: "Poiret One", sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        font-style: normal;
+        color: black;
+        margin-bottom: 5px;
+        padding: 10px;
+        font-size: 17px;
+        width: 95px;
+        height: 5px;
+        justify-content: center;
+        align-items: center;
+        border: solid white 2px;
+    }
+
+
+    .boton_ir {
+        display: flex;
+        color: rgb(245, 238, 238);
+        text-decoration: none;
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 700;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        width: 95px;
+        height: 5px;
+        border: solid;
+        justify-content: center;
+        align-items: center;
+    } */
+
+
+
+
+    /*------------------------------------------------HEADER-----------------------------------------------------------------*/
+
+    header {
+        background-color: #FFFFFF;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    header .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* header .menu nav{
+        width: 570px;
+    } */
+
+    /* header .menu .headercontenedor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+
+    header .menu .logo {
+        width: 550px;
+        height: auto;
+    }
+
+    header .menu .logo img {
+        width: 180px;
+        height: 95px;
+    }
+
+    header .container-fluid {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 15px;
+        font-style: normal;
+        color: black;
+        /* margin: 30px; */
+        /* width: 657.3px; */
+        /* height: 50px; */
+    }
+
+    /* 
+    header .container-fluid button{
+        display: none;
+    } */
+
+    header .orden-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .orden-menu .navbar-nav {
+        list-style: none;
+        /* padding: 0;
+        margin: 0; */
+        display: flex;
+        /* width: 100%; */
+    }
+
+    header .menu .login {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 110px;
+        width: 200px;
+    }
+
+    header .menu .login ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 110px;
+        width: 200px;
+    }
+
+    header .menu .login ul li {
+        list-style: none;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* margin: 5px; */
+        color: black;
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-style: normal;
+        width: 80px;
+        flex-wrap: wrap;
+    }
+
+    header .menu .login ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+
+    /*-----------------------------------------------------MAIN-------------------------------------------------------------*/
+
+    main {
+        background-color: #F9F6F7;
+    }
+
+    main section h3{
+        display: flex;
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 35px;
+        font-style: normal;
+        color: black;
+        justify-content: center;
+        padding-top: 15px;
+        list-style: none;
+    }
+    
+    main a {
+        text-decoration: none;
+        color: black;
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 700;
+        padding-left: 10px;
+    }
+
+
+
+    /*----------------------------------------------INDEX-------------------------------------------------*/
+
+    .hotsale {
+        width: 100%;
+        height: 570px;
+        text-align: center;
+        background-image: url(../img/index_portada_hombre.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    main .hotsale div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main .hotsale div h2 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 50px;
+        font-style: normal;
+        color: white;
+    }
+        
+    main .marcas div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin: 20px;
+    }
+    
+    main .marcas div img{
+        width: 100px;
+        height: 55px;
+    }
+
+    main .marcas a{
+        display: flex;
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 35px;
+        font-style: normal;
+        color: black;
+        justify-content: center;
+        padding-top: 15px;
+        list-style: none;
+    }
+    
+    
+    
+    main .newtemp .contenedora {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 18px;
+        /* position: relative; */
+    }
+
+    main .newtemp .contenedora div {
+        border: 2px white solid;
+        text-align: center;
+        margin: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+        -webkit-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+        -moz-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+        /* position: relative; */
+    }
+
+    main .newtemp .contenedora div img {
+        width: 400px;
+        height: 500px;
+        margin-bottom: 10px;
+        /* position: absolute;
+        bottom: 0; */
+    }
+
+
+    main .newtemp .contenedora .horizontal {
+        height: auto;
+        position: relative;
+    }
+
+    main .newtemp .contenedora .horizontal img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    main .horizontal h4 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 35px;
+        font-style: normal;
+        color: black;
+        margin-bottom: 5px;
+        width: 100%;
+        position: absolute;
+        bottom: 1;
+        width: 100%;
+    }
+
+
+
+
+    
+
+    /*-------------------------------------------ABOUT US------------------------------------------------*/
+
+    .bio {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bio div {
+        width: 50%;
+    }
+
+    .bio div h2 {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 700;
+        color: black;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .bio div p {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 500;
+        color: black;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.6;
+    }
+
+    main .posters h2 {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 700;
+        color: black;
+        font-size: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    main .posters {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main .posters .poster1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    main .posters .poster1 img {
+        width: 500px;
+        height: 550px;
+    }
+
+    main .posters .poster2 img {
+        width: 500px;
+        height: 500px;
+    }
+
+    /*----------------------------------------HOT SALE  Mismo diseno de Products-------------------------------------------------*/
+    main .titulo_grilla{
+        display: flex;
+    }
+
+    main .titulo_grilla img{
+        width: 300px;
+        height: 400px;
+    }
+
+
+    /*----------------------------------------PRODUCTS-----------------------------------------------------*/
+    
+    main .fototitulo{
+        display: flex;
+        width: 1000px;
+    }
+
+    main .fototitulo img{
+        /* width: 755px; */
+        height: 550px;
+    }
+    
+    main .titulo_grilla {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    main .titulo_grilla h3 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        /* Alineación horizontal del texto */
+    }
+
+    main .grid_productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 15px;
+        margin-left: 15px;
+    }
+
+    main .grid_productos .grid_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px gray solid;
+        text-align: center;
+        margin: 5px;
+        position: relative;
+        box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+        -webkit-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+        -moz-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+    }
+
+    main .grid_item h4 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        font-style: normal;
+        color: white;
+        background-color: rgba(11, 18, 71, 0.674);
+        width: 100%;
+        margin-bottom: 5px;
+        position: absolute;
+        bottom: 45px;
+    }
+
+
+    main .grid_productos .grid_item button{
+        position: absolute;
+        bottom: 10px;
+    }
+
+    main .botones{
+        background-color: white;
+    }
+
+    main .grid_productos .grid_item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .filtros {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .filtros form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filtros h4 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        font-style: normal;
+        color: black;
+    }
+
+    .filtros label {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        font-style: normal;
+        color: black;
+    }
+
+
+
+    /*----------------------------------------CONTACT------------------------------------------------------*/
+
+    main .formulario div h3 {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: 700;
+        color: white;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    main .formulario div p {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 500;
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.6;
+    }
+
+    main .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 700;
+        color: white;
+        background-image: url(../img/contact_foto\ para\ contacto\ 1.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        width: 100%;
+        height: 555px;
+    }
+
+    main .formulario .suscribete {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .formulario .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    main .formulario .form .email input {
+        width: 450px;
+        height: 50px;
+        border-radius: 5px;
+        border: solid white 1.8px;
+        background-color: transparent;
+    }
+
+    main .formulario .form .email ::placeholder {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings: 500;
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1.6;
+        color: white;
+    }
+
+    main .formulario .form .boton_suscribir input {
+        background-color: white;
+        border: solid white 5px;
+        border-radius: 5px;
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings: 500;
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1.6;
+        color: black;
+        cursor: pointer;
+        width: 150px;
+        height: 50px;
+        margin-left: 3px;
+    }
+
+    /*------------------------------------------------FOOTER-----------------------------------------------------------------*/
+
+    footer {
+        background-color: #f6f8fb;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        margin-top: 1px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    footer .contacto a {
+        text-decoration: none;
+        color: black;
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-style: normal;
+    }
+
+    footer .logofooter div {
+        display: flex;
+    }
+
+    footer .logofooter div h4 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-style: normal;
+    }
+
+    footer .logofooter div img {
+        width: 180px;
+        height: 80px;
+    }
+
+    footer .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 100px;
+        /* margin-left: auto; */
+    }
+
+    footer .redes .instagram {
+        display: flex;
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .redes .instagram a {
+        display: flex;
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .redes .whatsapp {
+        display: flex;
+        width: 44px;
+        height: 44px;
+    }
+
+    footer .redes .whatsapp a {
+        display: flex;
+        width: 44px;
+        height: 44px;
+    }
+
+    footer .redes .tiktok {
+        display: flex;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    footer .redes .tiktok a {
+        display: flex;
+        width: 50px;
+        height: 50px;
+
+    }
+/* 
+    /*------------------------------MEDIA QUERY---------------------------*/
+
+    /*------------------------------HEADER--------------------------*/
+    @media screen and (max-width:1230px) {
+        header .menu .logo {
+            width: 400px;
+
+        }
+    }
+
+    @media screen and (max-width:1076px) {
+        header .menu .logo {
+            width: 300px;
+
+        }
+    }
+
+    @media screen and (max-width:1000px) {
+        header .container-fluid {
+            font-size: 10px;
+
+        }
+        
+        header .menu .logo {
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        header .menu .logo{
+            width: 100px;
+        }
+        
+        header .menu .logo img{
+            width: 100px;
+            height: 75px;
+
+        }
+    }
+        header .menu .login {
+            height: 75px;
+            width: 150px;
+        }
+
+        header .menu .login ul {
+            height: 75px;
+            width: 150px;
+        }
+    
+        header .menu .login ul svg{
+            width: 15px;
+            height: 15px;
+        }
+    
+        header .menu .login ul li {
+            width: 45px;
+        }
+    
+        header .menu .login ul li a {
+            font-size: 10px;
+        }
+
+
+    /*------------------------------INDEX---------------------------*/
+    @media screen and (max-width:900px){
+        main .horizontal h4{
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (max-width:700px){
+        main .horizontal h4{
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        .hotsale{
+            width: auto;
+            height: 600px;
+        }
+
+        main .hotsale div h2{
+            font-size: 35px;
+        }
+
+        main .marcas h3{
+            font-size: 25px;
+        }
+
+        main .marcas div img{
+            width: 70px;
+            height: 35px;
+        }
+
+        main .newtemp{
+            width: auto;
+            height: auto;
+        }
+
+        main .newtemp h3{
+            font-size: 25px;
+        }
+
+        main .newtemp .contenedora div img {
+            width: 350px;
+            height: 450px;
+        }
+        
+        main .newtemp .contenedora{
+            width: auto;
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width:430px){
+        main .hotsale div h2{
+            font-size: 25px;
+        }
+
+        main .newtemp .contenedora div img {
+            width: 270px;
+            height: 370px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+    /*------------------------------ABOUT US---------------------------*/
+
+    /*------------------------------HOTSALE---------------------------*/
+
+    /*------------------------------PRODUCTS---------------------------*/
+
+    /*------------------------------CONTACT---------------------------*/
+
+    /*------------------------------FOOTER---------------------------*/
+    @media screen and (max-width:800px) {
+        footer .contacto svg{
+            width: 18px;
+            height: 18px;
+        }
+        
+        footer .contacto a{
+            font-size: 13px;
+        }
+
+        footer .logofooter div img {
+            width: 150px;
+            height: 80px;
+        }
+    
+        footer .logofooter div h4{
+            font-size: 20px;
+        }
+        
+        footer .redes {
+            /* flex-direction: column; */
+            width: 80px;
+            height: 116px;
+        }
+
+        footer .redes .instagram{
+            width: 40px;
+            height: 40px;
+        }
+
+        footer .redes .whatsapp{
+            width: 40px;
+            height: 40px;
+        }
+
+        footer .redes .tiktok{
+            width: 40px;
+            height: 40px;
+        }
+
+        footer .redes div a svg{
+            width: 25px;
+            height: 25px;
+
+        }
+    }
+    
+    @media screen and (max-width:560px) {
+        footer .contacto a{
+            font-size: 10px;
+        }
+
+        footer .logofooter div img {
+            width: 120px;
+            height: 60px;
+        }
+    
+        footer .logofooter div h4{
+            font-size: 15px;
+        }
+        
+        footer .redes {
+            /* flex-direction: column; */
+            width: 50px;
+            height: 86px;
+        }
+
+        footer .redes .instagram{
+            width: 30px;
+            height: 30px;
+        }
+
+        footer .redes .whatsapp{
+            width: 30px;
+            height: 30px;
+        }
+
+        footer .redes .tiktok{
+            width: 30px;
+            height: 30px;
+        }
+
+        footer .redes div a svg{
+            width: 20px;
+            height: 20px;
+
+        }
+    }
