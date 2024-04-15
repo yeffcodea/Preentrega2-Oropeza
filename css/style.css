@@ -43,16 +43,6 @@
         align-items: center;
     }
 
-    /* header .menu nav{
-        width: 570px;
-    } */
-
-    /* header .menu .headercontenedor{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    } */
-
     header .menu .logo {
         width: 550px;
         height: auto;
@@ -69,15 +59,7 @@
         font-size: 15px;
         font-style: normal;
         color: black;
-        /* margin: 30px; */
-        /* width: 657.3px; */
-        /* height: 50px; */
     }
-
-    /* 
-    header .container-fluid button{
-        display: none;
-    } */
 
     header .orden-menu {
         display: flex;
@@ -86,10 +68,7 @@
 
     header .orden-menu .navbar-nav {
         list-style: none;
-        /* padding: 0;
-        margin: 0; */
         display: flex;
-        /* width: 100%; */
     }
 
     header .menu .login {
@@ -214,9 +193,7 @@
         padding-top: 15px;
         list-style: none;
     }
-    
-    
-    
+        
     main .newtemp .contenedora {
         display: flex;
         justify-content: space-evenly;
@@ -224,7 +201,6 @@
         flex-wrap: wrap;
         margin-top: 30px;
         margin-bottom: 18px;
-        /* position: relative; */
     }
 
     main .newtemp .contenedora div {
@@ -237,15 +213,12 @@
         box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
         -webkit-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
         -moz-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
-        /* position: relative; */
     }
 
     main .newtemp .contenedora div img {
         width: 400px;
         height: 500px;
         margin-bottom: 10px;
-        /* position: absolute;
-        bottom: 0; */
     }
 
 
@@ -259,7 +232,6 @@
         height: auto;
     }
 
-
     main .horizontal h4 {
         font-family: "Poiret One", sans-serif;
         font-weight: 1000;
@@ -271,12 +243,7 @@
         position: absolute;
         bottom: 1;
         width: 100%;
-    }
-
-
-
-
-    
+    }    
 
     /*-------------------------------------------ABOUT US------------------------------------------------*/
 
@@ -406,7 +373,6 @@
         font-size: 30px;
         color: black;
         text-align: center;
-        /* Alineación horizontal del texto */
     }
 
     main .grid_productos {
@@ -444,7 +410,6 @@
         position: absolute;
         bottom: 45px;
     }
-
 
     main .grid_productos .grid_item button{
         position: absolute;
@@ -485,8 +450,6 @@
         font-style: normal;
         color: black;
     }
-
-
 
     /*----------------------------------------CONTACT------------------------------------------------------*/
 
@@ -798,7 +761,6 @@
         }
     }
 
-
     /*------------------------------ABOUT US---------------------------*/
 
     /*------------------------------HOTSALE---------------------------*/
@@ -842,16 +804,31 @@
 
     @media screen and (max-width:680px){
         main .grid_productos {
-            grid-template-columns: 0.5fr 1fr;
-            grid-template-rows: repeat(6, 1fr);
-            margin-right: 85px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.12fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            margin-right: 15px;
         }
 
         .filtros {
             grid-row-start: 1;
-            grid-row-end: 8;
+            grid-row-end: 1;
+            display: flex;
+        }
+
+        .filtros form{
+            flex-direction: row;
+            width: 460px;
+            justify-content: space-evenly;
         }
     }
+
+    @media screen and (max-width:480px){
+        .filtros form{
+            width: 340px;
+        }
+    }
+
+
 
     @media screen and (max-width:455px){
         main .grid_item h4{
@@ -932,7 +909,6 @@
         footer .redes div a svg{
             width: 25px;
             height: 25px;
-
         }
     }
     
@@ -951,7 +927,6 @@
         }
         
         footer .redes {
-            /* flex-direction: column; */
             width: 50px;
             height: 86px;
         }
@@ -974,6 +949,5 @@
         footer .redes div a svg{
             width: 20px;
             height: 20px;
-
         }
     }
