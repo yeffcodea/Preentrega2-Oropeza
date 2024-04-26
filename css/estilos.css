@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Jura:wght@300..700&family=Poiret+One&family=Zen+Maru+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Big+Shoulders+Display:wght@100..900&family=Jura:wght@300..700&family=Poiret+One&family=Zen+Maru+Gothic&display=swap");
+/*---RESET---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  flex-wrap: wrap;
+  width: auto; }
+  header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header section nav div {
+      font-family: "Poiret One", sans-serif;
+      font-weight: 1000;
+      font-size: 15px;
+      font-style: normal;
+      color: black; }
+      header section nav div div {
+        display: flex;
+        justify-content: space-between; }
+        header section nav div div ul {
+          list-style: none;
+          display: flex; }
+
+.logo {
+  width: 550px;
+  height: auto; }
+  .logo img {
+    width: 180px;
+    height: 95px; }
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 110px;
+  width: 200px; }
+  .login ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 110px;
+    width: 200px; }
+    .login ul li {
+      list-style: none;
+      justify-content: space-between;
+      align-items: flex-start;
+      color: black;
+      font-family: "Poiret One", sans-serif;
+      font-weight: 1000;
+      font-style: normal;
+      width: 80px;
+      flex-wrap: wrap; }
+      .login ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px; }
+
+main {
+  background-color: #c5d5e755;
+  /*----------------------------------------------INDEX-------------------------------------------------*/
+  /*-------------------------------------------ABOUT US------------------------------------------------*/
+  /*----------------------------------------HOT SALE  Mismo diseno de Products-------------------------------------------------*/
+  /*----------------------------------------PRODUCTS-----------------------------------------------------*/
+  /*----------------------------------------CONTACT------------------------------------------------------*/ }
+  main section h3 {
+    display: flex;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 1000;
+    font-size: 35px;
+    font-style: normal;
+    color: black;
+    justify-content: center;
+    padding-top: 15px;
+    list-style: none; }
+  main .hotsale {
+    width: 100%;
+    height: 570px;
+    text-align: center;
+    background-image: url(../img/index_portada_hombre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    main .hotsale div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      main .hotsale div h2 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 50px;
+        font-style: normal;
+        color: white; }
+  main .marcas div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 20px; }
+    main .marcas div img {
+      width: 100px;
+      height: 55px; }
+  main .newtemp div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 18px; }
+    main .newtemp div div {
+      border: 2px white solid;
+      text-align: center;
+      margin: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+      -webkit-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+      -moz-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68); }
+      main .newtemp div div img {
+        width: 400px;
+        height: 500px;
+        margin-bottom: 10px; }
+    main .newtemp div .horizontal {
+      height: auto;
+      position: relative; }
+      main .newtemp div .horizontal img {
+        width: 100%;
+        height: auto; }
+      main .newtemp div .horizontal h4 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 35px;
+        font-style: normal;
+        color: black;
+        margin-bottom: 5px;
+        width: 100%;
+        position: absolute;
+        bottom: 1;
+        width: 100%; }
+  main .bio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    main .bio div {
+      width: 50%; }
+      main .bio div h2 {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 700;
+        color: black;
+        font-size: 50px;
+        margin-bottom: 20px; }
+      main .bio div p {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 500;
+        color: black;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.6; }
+  main .posters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    main .posters h2 {
+      font-family: "Advent Pro", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      font-variation-settings: 700;
+      color: black;
+      font-size: 50px;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+    main .posters .poster1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px; }
+      main .posters .poster1 img {
+        width: 500px;
+        height: 550px; }
+    main .posters .poster2 img {
+      width: 500px;
+      height: 500px; }
+  main .titulo_grilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 10px; }
+    main .titulo_grilla img {
+      width: 300px;
+      height: 400px; }
+  main .fototitulo {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-image: url(../img/productos_cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    main .fototitulo div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      main .fototitulo div h2 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-size: 50px;
+        font-style: normal;
+        color: white; }
+  main .grid_productos {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-left: 15px;
+    margin-right: 65px; }
+    main .grid_productos .filtros {
+      grid-row-start: 1;
+      grid-row-end: 4; }
+      main .grid_productos .filtros form {
+        display: flex;
+        flex-direction: column; }
+        main .grid_productos .filtros form div h4 {
+          font-family: "Poiret One", sans-serif;
+          font-weight: 700;
+          font-size: 25px;
+          font-style: normal;
+          color: black; }
+        main .grid_productos .filtros form div label {
+          font-family: "Poiret One", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          font-style: normal;
+          color: black; }
+    main .grid_productos .grid_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px gray solid;
+      text-align: center;
+      margin: 5px;
+      position: relative;
+      box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+      -webkit-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
+      -moz-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68); }
+      main .grid_productos .grid_item img {
+        width: 100%;
+        height: 100%; }
+      main .grid_productos .grid_item h4 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        font-style: normal;
+        color: white;
+        background-color: rgba(11, 18, 71, 0.674);
+        width: 100%;
+        margin-bottom: 5px;
+        position: absolute;
+        bottom: 45px; }
+      main .grid_productos .grid_item button {
+        position: absolute;
+        bottom: 10px; }
+  main .botones {
+    background-color: white; }
+  main .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: 700;
+    color: white;
+    background-image: url(../img/contact_fondo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    height: 555px; }
+    main .formulario .suscribete {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .formulario .suscribete h3 {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: 700;
+        color: white;
+        font-size: 50px;
+        margin-bottom: 20px; }
+      main .formulario .suscribete p {
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 500;
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.6; }
+    main .formulario .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 50px;
+      margin-top: 10px; }
+      main .formulario .form .email input {
+        width: 450px;
+        height: 50px;
+        border-radius: 5px;
+        border: solid white 1.8px;
+        background-color: transparent; }
+        main .formulario .form .email input::placeholder {
+          font-family: "Advent Pro", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 600;
+          font-style: normal;
+          font-variation-settings: 500;
+          font-size: 15px;
+          font-style: italic;
+          line-height: 1.6;
+          color: white; }
+      main .formulario .form .boton_suscribir input {
+        background-color: white;
+        border: solid white 5px;
+        border-radius: 5px;
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings: 500;
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1.6;
+        color: black;
+        cursor: pointer;
+        width: 150px;
+        height: 50px;
+        margin-left: 3px; }
+  main a {
+    text-decoration: none;
+    color: black;
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: 700;
+    padding-left: 10px; }
+
+footer {
+  background-color: #f6f8fb;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-top: 1px;
+  padding: 20px;
+  flex-wrap: wrap; }
+  footer .contacto a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 1000;
+    font-style: normal; }
+  footer .logofooter div {
+    display: flex; }
+    footer .logofooter div img {
+      width: 180px;
+      height: 80px; }
+    footer .logofooter div h4 {
+      font-family: "Poiret One", sans-serif;
+      font-weight: 1000;
+      font-style: normal; }
+  footer .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px; }
+    footer .redes div {
+      display: flex;
+      width: 50px;
+      height: 50px; }
+      footer .redes div a {
+        display: flex;
+        width: 50px;
+        height: 50px; }
+
+/*------------------------------HEADER--------------------------*/
+@media screen and (max-width: 1230px) {
+  header section .logo {
+    width: 400px; } }
+
+@media screen and (max-width: 1076px) {
+  header section .logo {
+    width: 300px; } }
+
+@media screen and (max-width: 1000px) {
+  header section nav div {
+    font-size: 10px; }
+  header section .logo {
+    width: auto; } }
+
+@media screen and (max-width: 500px) {
+  header section .logo {
+    width: 100px; }
+  header section .logo img {
+    width: 100px;
+    height: 75px; } }
+
+header section .login {
+  height: 75px;
+  width: 150px; }
+
+header section .login ul {
+  height: 75px;
+  width: 150px; }
+
+header section .login ul svg {
+  width: 15px;
+  height: 15px; }
+
+header section .login ul li {
+  width: 45px; }
+
+header section .login ul li a {
+  font-size: 10px; }
+
+/*------------------------------INDEX---------------------------*/
+@media screen and (max-width: 900px) {
+  main .horizontal h4 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 700px) {
+  main .horizontal h4 {
+    font-size: 15px; } }
+
+@media screen and (max-width: 500px) {
+  .hotsale {
+    width: auto;
+    height: 600px; }
+  main .hotsale div h2 {
+    font-size: 35px; }
+  main .marcas h3 {
+    font-size: 25px; }
+  main .marcas div img {
+    width: 70px;
+    height: 35px; }
+  main .newtemp {
+    width: auto;
+    height: auto; }
+  main .newtemp h3 {
+    font-size: 25px; }
+  main .newtemp .contenedora div img {
+    width: 350px;
+    height: 450px; }
+  main .newtemp .contenedora {
+    width: auto;
+    height: auto; } }
+
+@media screen and (max-width: 430px) {
+  main .hotsale div h2 {
+    font-size: 25px; }
+  main .newtemp .contenedora div img {
+    width: 270px;
+    height: 370px;
+    margin-bottom: 10px; } }
+
+/*------------------------------ABOUT US---------------------------*/
+/*------------------------------HOTSALE---------------------------*/
+/*------------------------------PRODUCTS---------------------------*/
+@media screen and (max-width: 1100px) {
+  main .grid_item h4 {
+    font-size: 15px; }
+  main .filtros h4 {
+    font-size: 22px; }
+  main .filtros label {
+    font-size: 13px; }
+  main .grid_item button {
+    font-size: 11px; }
+  main .grid_productos {
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: 65px; }
+  .filtros {
+    grid-row-start: 1;
+    grid-row-end: 6; } }
+
+@media screen and (max-width: 900px) {
+  main .marcas div img {
+    width: 75px;
+    height: 35px; } }
+
+@media screen and (max-width: 680px) {
+  main .grid_productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.12fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-right: 15px; }
+  .filtros {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex; }
+  .filtros form {
+    flex-direction: row;
+    width: 460px;
+    justify-content: space-evenly; } }
+
+@media screen and (max-width: 480px) {
+  .filtros form {
+    width: 340px; } }
+
+@media screen and (max-width: 455px) {
+  main .grid_item h4 {
+    font-size: 10px;
+    bottom: 35px; }
+  main .filtros h4 {
+    font-size: 18px; }
+  main .filtros label {
+    font-size: 8px; }
+  main .grid_item button {
+    font-size: 8px; }
+  main .filtros form label input {
+    width: 9px;
+    height: 9px; }
+  main .marcas div img {
+    width: 45px;
+    height: 20px; }
+  main .fototitulo div h2 {
+    font-size: 35px; } }
+
+/*------------------------------CONTACT---------------------------*/
+/*------------------------------FOOTER---------------------------*/
+@media screen and (max-width: 800px) {
+  footer .contacto svg {
+    width: 18px;
+    height: 18px; }
+  footer .contacto a {
+    font-size: 13px; }
+  footer .logofooter div img {
+    width: 150px;
+    height: 80px; }
+  footer .logofooter div h4 {
+    font-size: 20px; }
+  footer .redes {
+    /* flex-direction: column; */
+    width: 80px;
+    height: 116px; }
+  footer .redes .instagram {
+    width: 40px;
+    height: 40px; }
+  footer .redes .whatsapp {
+    width: 40px;
+    height: 40px; }
+  footer .redes .tiktok {
+    width: 40px;
+    height: 40px; }
+  footer .redes div a svg {
+    width: 25px;
+    height: 25px; } }
+
+@media screen and (max-width: 560px) {
+  footer .contacto a {
+    font-size: 10px; }
+  footer .logofooter div img {
+    width: 120px;
+    height: 60px; }
+  footer .logofooter div h4 {
+    font-size: 15px; }
+  footer .redes {
+    width: 50px;
+    height: 86px; }
+  footer .redes .instagram {
+    width: 30px;
+    height: 30px; }
+  footer .redes .whatsapp {
+    width: 30px;
+    height: 30px; }
+  footer .redes .tiktok {
+    width: 30px;
+    height: 30px; }
+  footer .redes div a svg {
+    width: 20px;
+    height: 20px; } }

@@ -37,23 +37,13 @@
         width: auto;
     }
 
-    header .menu {
+    header section {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    header .menu .logo {
-        width: 550px;
-        height: auto;
-    }
-
-    header .menu .logo img {
-        width: 180px;
-        height: 95px;
-    }
-
-    header .container-fluid {
+    header section nav div{
         font-family: "Poiret One", sans-serif;
         font-weight: 1000;
         font-size: 15px;
@@ -61,17 +51,28 @@
         color: black;
     }
 
-    header .orden-menu {
+    header section nav div div{
         display: flex;
         justify-content: space-between;
     }
 
-    header .orden-menu .navbar-nav {
+    header section nav div div ul{
         list-style: none;
         display: flex;
     }
 
-    header .menu .login {
+    header section .logo {
+        width: 550px;
+        height: auto;
+    }
+
+    header section .logo img {
+        width: 180px;
+        height: 95px;
+    }
+
+
+    header section .login {
         display: flex;
         justify-content: space-between;
         text-align: center;
@@ -79,7 +80,7 @@
         width: 200px;
     }
 
-    header .menu .login ul {
+    header section .login ul {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -87,7 +88,7 @@
         width: 200px;
     }
 
-    header .menu .login ul li {
+    header section .login ul li {
         list-style: none;
         justify-content: space-between;
         align-items: flex-start;
@@ -100,7 +101,7 @@
         flex-wrap: wrap;
     }
 
-    header .menu .login ul li a {
+    header section .login ul li a {
         text-decoration: none;
         color: black;
         font-size: 15px;
@@ -139,7 +140,7 @@
 
     /*----------------------------------------------INDEX-------------------------------------------------*/
 
-    .hotsale {
+    main .hotsale {
         width: 100%;
         height: 570px;
         text-align: center;
@@ -182,7 +183,7 @@
         height: 55px;
     }
 
-    main .marcas a{
+    /* main .marcas a{
         display: flex;
         font-family: "Poiret One", sans-serif;
         font-weight: 1000;
@@ -192,9 +193,9 @@
         justify-content: center;
         padding-top: 15px;
         list-style: none;
-    }
+    } */
         
-    main .newtemp .contenedora {
+    main .newtemp div {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -203,7 +204,7 @@
         margin-bottom: 18px;
     }
 
-    main .newtemp .contenedora div {
+    main .newtemp div div {
         border: 2px white solid;
         text-align: center;
         margin: 45px;
@@ -215,24 +216,24 @@
         -moz-box-shadow: 3px 3px 14px -3px rgba(0, 0, 0, 0.68);
     }
 
-    main .newtemp .contenedora div img {
+    main .newtemp div div img {
         width: 400px;
         height: 500px;
         margin-bottom: 10px;
     }
 
 
-    main .newtemp .contenedora .horizontal {
+    main .newtemp div .horizontal {
         height: auto;
         position: relative;
     }
 
-    main .newtemp .contenedora .horizontal img{
+    main .newtemp div .horizontal img{
         width: 100%;
         height: auto;
     }
 
-    main .horizontal h4 {
+    main .newtemp div .horizontal h4 {
         font-family: "Poiret One", sans-serif;
         font-weight: 1000;
         font-size: 35px;
@@ -247,17 +248,17 @@
 
     /*-------------------------------------------ABOUT US------------------------------------------------*/
 
-    .bio {
+    main .bio {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .bio div {
+    main .bio div {
         width: 50%;
     }
 
-    .bio div h2 {
+    main .bio div h2 {
         font-family: "Advent Pro", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
@@ -268,7 +269,7 @@
         margin-bottom: 20px;
     }
 
-    .bio div p {
+    main .bio div p {
         font-family: "Advent Pro", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
@@ -278,6 +279,13 @@
         font-size: 20px;
         font-style: italic;
         line-height: 1.6;
+    }
+
+    main .posters {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
     main .posters h2 {
@@ -290,13 +298,6 @@
         font-size: 50px;
         margin-bottom: 20px;
         margin-top: 20px;
-    }
-
-    main .posters {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
     }
 
     main .posters .poster1 {
@@ -325,6 +326,22 @@
         width: 300px;
         height: 400px;
     }
+
+    main .titulo_grilla {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    /* main .titulo_grilla h3 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: black;
+        text-align: center;
+    } */
 
 
     /*----------------------------------------PRODUCTS-----------------------------------------------------*/
@@ -359,21 +376,7 @@
         color: white;
     }
     
-    main .titulo_grilla {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-        margin-top: 10px;
-    }
 
-    main .titulo_grilla h3 {
-        font-family: "Poiret One", sans-serif;
-        font-weight: 700;
-        font-size: 30px;
-        color: black;
-        text-align: center;
-    }
 
     main .grid_productos {
         display: grid;
@@ -383,6 +386,32 @@
         row-gap: 15px;
         margin-left: 15px;
         margin-right: 65px;
+    }
+
+    .filtros {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .filtros form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filtros h4 {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        font-style: normal;
+        color: black;
+    }
+
+    .filtros label {
+        font-family: "Poiret One", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        font-style: normal;
+        color: black;
     }
 
     main .grid_productos .grid_item {
@@ -416,42 +445,37 @@
         bottom: 10px;
     }
 
-    main .botones{
-        background-color: white;
-    }
-
     main .grid_productos .grid_item img {
         width: 100%;
         height: 100%;
     }
 
-    .filtros {
-        grid-row-start: 1;
-        grid-row-end: 4;
-    }
-
-    .filtros form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .filtros h4 {
-        font-family: "Poiret One", sans-serif;
-        font-weight: 700;
-        font-size: 25px;
-        font-style: normal;
-        color: black;
-    }
-
-    .filtros label {
-        font-family: "Poiret One", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        font-style: normal;
-        color: black;
+    main .botones{
+        background-color: white;
     }
 
     /*----------------------------------------CONTACT------------------------------------------------------*/
+
+
+    main .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: 700;
+        color: white;
+        background-image: url(../img/contact_fondo.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        width: 100%;
+        height: 555px;
+    }
 
     main .formulario div h3 {
         font-family: "Advent Pro", sans-serif;
@@ -474,26 +498,6 @@
         font-size: 20px;
         font-style: italic;
         line-height: 1.6;
-    }
-
-    main .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: "Advent Pro", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-variation-settings: 700;
-        color: white;
-        background-image: url(../img/contact_foto\ para\ contacto\ 1.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-        width: 100%;
-        height: 555px;
     }
 
     main .formulario .suscribete {

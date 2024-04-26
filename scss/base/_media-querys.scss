@@ -1,0 +1,319 @@
+/*------------------------------HEADER--------------------------*/
+@media screen and (max-width:1230px) {
+    header {
+        section {
+            .logo {
+                width: 400px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1076px) {
+    header section .logo {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    header section nav div {
+        font-size: 10px;
+
+    }
+
+    header section .logo {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header section .logo {
+        width: 100px;
+    }
+
+    header section .logo img {
+        width: 100px;
+        height: 75px;
+
+    }
+}
+
+header section .login {
+    height: 75px;
+    width: 150px;
+}
+
+header section .login ul {
+    height: 75px;
+    width: 150px;
+}
+
+header section .login ul svg {
+    width: 15px;
+    height: 15px;
+}
+
+header section .login ul li {
+    width: 45px;
+}
+
+header section .login ul li a {
+    font-size: 10px;
+}
+
+
+/*------------------------------INDEX---------------------------*/
+@media screen and (max-width:900px) {
+    main .horizontal h4 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    main .horizontal h4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hotsale {
+        width: auto;
+        height: 600px;
+    }
+
+    main .hotsale div h2 {
+        font-size: 35px;
+    }
+
+    main .marcas h3 {
+        font-size: 25px;
+    }
+
+    main .marcas div img {
+        width: 70px;
+        height: 35px;
+    }
+
+    main .newtemp {
+        width: auto;
+        height: auto;
+    }
+
+    main .newtemp h3 {
+        font-size: 25px;
+    }
+
+    main .newtemp .contenedora div img {
+        width: 350px;
+        height: 450px;
+    }
+
+    main .newtemp .contenedora {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:430px) {
+    main .hotsale div h2 {
+        font-size: 25px;
+    }
+
+    main .newtemp .contenedora div img {
+        width: 270px;
+        height: 370px;
+        margin-bottom: 10px;
+    }
+}
+
+/*------------------------------ABOUT US---------------------------*/
+
+/*------------------------------HOTSALE---------------------------*/
+
+/*------------------------------PRODUCTS---------------------------*/
+@media screen and (max-width:1100px) {
+    main .grid_item h4 {
+        font-size: 15px;
+    }
+
+    main .filtros h4 {
+        font-size: 22px;
+    }
+
+    main .filtros label {
+        font-size: 13px;
+    }
+
+    main .grid_item button {
+        font-size: 11px;
+    }
+
+    main .grid_productos {
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-right: 65px;
+    }
+
+    .filtros {
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+}
+
+@media screen and (max-width:900px) {
+    main .marcas div img {
+        width: 75px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    main .grid_productos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.12fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-right: 15px;
+    }
+
+    .filtros {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        display: flex;
+    }
+
+    .filtros form {
+        flex-direction: row;
+        width: 460px;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .filtros form {
+        width: 340px;
+    }
+}
+
+
+
+@media screen and (max-width:455px) {
+    main .grid_item h4 {
+        font-size: 10px;
+        bottom: 35px;
+    }
+
+    main .filtros h4 {
+        font-size: 18px;
+    }
+
+    main .filtros label {
+        font-size: 8px;
+    }
+
+    main .grid_item button {
+        font-size: 8px;
+    }
+
+    main .filtros form label input {
+        width: 9px;
+        height: 9px;
+    }
+
+    main .marcas div img {
+        width: 45px;
+        height: 20px;
+    }
+
+    main .fototitulo div h2 {
+        font-size: 35px;
+    }
+}
+
+/*------------------------------CONTACT---------------------------*/
+
+/*------------------------------FOOTER---------------------------*/
+@media screen and (max-width:800px) {
+    footer .contacto svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    footer .contacto a {
+        font-size: 13px;
+    }
+
+    footer .logofooter div img {
+        width: 150px;
+        height: 80px;
+    }
+
+    footer .logofooter div h4 {
+        font-size: 20px;
+    }
+
+    footer .redes {
+        /* flex-direction: column; */
+        width: 80px;
+        height: 116px;
+    }
+
+    footer .redes .instagram {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .redes .whatsapp {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .redes .tiktok {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .redes div a svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    footer .contacto a {
+        font-size: 10px;
+    }
+
+    footer .logofooter div img {
+        width: 120px;
+        height: 60px;
+    }
+
+    footer .logofooter div h4 {
+        font-size: 15px;
+    }
+
+    footer .redes {
+        width: 50px;
+        height: 86px;
+    }
+
+    footer .redes .instagram {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .redes .whatsapp {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .redes .tiktok {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .redes div a svg {
+        width: 20px;
+        height: 20px;
+    }
+}

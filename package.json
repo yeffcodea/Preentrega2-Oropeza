@@ -1,0 +1,17 @@
+{
+  "name": "proyecto_coder",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\">Proyecto de pagina web tipo E-Comerce para un emprendimiento de venta de ropa multimarca llamado Zinple</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
