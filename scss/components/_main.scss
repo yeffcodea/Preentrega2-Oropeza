@@ -3,11 +3,8 @@ main{
     section{
         h3{
             display: flex;
-            font-family: "Poiret One", sans-serif;
-            font-weight: 1000;
-            font-size: 35px;
+            @include fuente("Poiret One", 1000, 35px, black);
             font-style: normal;
-            color: black;
             justify-content: center;
             padding-top: 15px;
             list-style: none;
@@ -33,20 +30,15 @@ main{
             justify-content: space-around;
             align-items: center;
             h2{
-                font-family: "Poiret One", sans-serif;
-                font-weight: 1000;
-                font-size: 50px;
+                @include fuente("Poiret One", 1000, 50px, white);
                 font-style: normal;
-                color: white;
             }
         }
     }
 
     .marcas{
         div{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @extend %flex-between;
             align-content: center;
             margin: 20px;
             img{
@@ -89,11 +81,8 @@ main{
                     height: auto;
                 }
                 h4{
-                    font-family: "Poiret One", sans-serif;
-                    font-weight: 1000;
-                    font-size: 35px;
+                    @include fuente("Poiret One", 1000, 35px, black);
                     font-style: normal;
-                    color: black;
                     margin-bottom: 5px;
                     width: 100%;
                     position: absolute;
@@ -101,34 +90,31 @@ main{
                     width: 100%;
                 }
             }
-        }
-
+        }        
     }
 /*-------------------------------------------ABOUT US------------------------------------------------*/
     .bio{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        img{
+            margin-left: 25px;
+            margin-right: 25px;
+        }
         div{
-            width: 50%;
+            margin-right: 35px;
             h2{
-                font-family: "Advent Pro", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 500;
+                @include fuente("Advent Pro", 500, 50px, black);
                 font-style: normal;
+                font-optical-sizing: auto;
                 font-variation-settings: 700;
-                color: black;
-                font-size: 50px;
                 margin-bottom: 20px;
             }
             p{
-                font-family: "Advent Pro", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 500;
+                @include fuente("Advent Pro", 500, 20px, black);
                 font-style: normal;
+                font-optical-sizing: auto;
                 font-variation-settings: 500;
-                color: black;
-                font-size: 20px;
                 font-style: italic;
                 line-height: 1.6;
             }
@@ -141,21 +127,16 @@ main{
         justify-content: space-around;
         align-items: center;
         h2{
-            font-family: "Advent Pro", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
+            @include fuente("Advent Pro", 500, 50px, black);
             font-style: normal;
+            font-optical-sizing: auto;
             font-variation-settings: 700;
-            color: black;
-            font-size: 50px;
             margin-bottom: 20px;
             margin-top: 20px;
         }
 
         .poster1{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @extend %flex-between;
             margin-bottom: 20px;
             img{
                 width: 500px;
@@ -204,11 +185,8 @@ main{
             justify-content: space-around;
             align-items: center;
             h2{
-                font-family: "Poiret One", sans-serif;
-                font-weight: 1000;
-                font-size: 50px;
+                @include fuente("Poiret One", 1000, 50px, white);
                 font-style: normal;
-                color: white;
             }
         }
     }
@@ -228,18 +206,12 @@ main{
                 flex-direction: column;
                 div{
                     h4{
-                        font-family: "Poiret One", sans-serif;
-                        font-weight: 700;
-                        font-size: 25px;
+                        @include fuente("Poiret One", 700, 25px, black);
                         font-style: normal;
-                        color: black;
                     }
                     label{
-                        font-family: "Poiret One", sans-serif;
-                        font-weight: 600;
-                        font-size: 16px;
+                        @include fuente("Poiret One", 600, 16px, black);
                         font-style: normal;
-                        color: black;
                     }
                 }
             }
@@ -260,11 +232,8 @@ main{
                 height: 100%;
             }
             h4{
-                font-family: "Poiret One", sans-serif;
-                font-weight: 100;
-                font-size: 20px;
+                @include fuente("Poiret One", 100, 20px, white);
                 font-style: normal;
-                color: white;
                 background-color: rgba(11, 18, 71, 0.674);
                 width: 100%;
                 margin-bottom: 5px;
@@ -290,9 +259,9 @@ main{
         font-family: "Advent Pro", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
+        color: white;
         font-style: normal;
         font-variation-settings: 700;
-        color: white;
         background-image: url(../img/contact_fondo.jpeg);
         background-position: center;
         background-repeat: no-repeat;
@@ -306,23 +275,17 @@ main{
             justify-content: center;
             align-items: center;
             h3{
-                font-family: "Advent Pro", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 400;
+                @include fuente("Advent Pro", 400, 50px, white);
                 font-style: normal;
                 font-variation-settings: 700;
-                color: white;
-                font-size: 50px;
+                font-optical-sizing: auto;
                 margin-bottom: 20px;
             }
             p{
-                font-family: "Advent Pro", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 500;
+                @include fuente("Advent Pro", 500, 20px, white);
                 font-style: normal;
                 font-variation-settings: 500;
-                color: white;
-                font-size: 20px;
+                font-optical-sizing: auto;
                 font-style: italic;
                 line-height: 1.6;
             }
@@ -342,15 +305,12 @@ main{
                     border: solid white 1.8px;
                     background-color: transparent;
                     &::placeholder{
-                        font-family: "Advent Pro", sans-serif;
-                        font-optical-sizing: auto;
-                        font-weight: 600;
+                        @include fuente("Advent Pro", 600, 15px, white);
                         font-style: normal;
+                        font-optical-sizing: auto;
                         font-variation-settings: 500;
-                        font-size: 15px;
                         font-style: italic;
                         line-height: 1.6;
-                        color: white;
                     }
                 }
             }
@@ -359,15 +319,12 @@ main{
                     background-color: white;
                     border: solid white 5px;
                     border-radius: 5px;
-                    font-family: "Advent Pro", sans-serif;
-                    font-optical-sizing: auto;
-                    font-weight: 600;
+                    @include fuente("Advent Pro", 600, 15px, black);
                     font-style: normal;
                     font-variation-settings: 500;
-                    font-size: 15px;
+                    font-optical-sizing: auto;
                     font-style: italic;
                     line-height: 1.6;
-                    color: black;
                     cursor: pointer;
                     width: 150px;
                     height: 50px;
@@ -379,11 +336,11 @@ main{
 
     a{
         text-decoration: none;
-        color: black;
         font-family: "Advent Pro", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 500;
+        color: black;
         font-style: normal;
+        font-optical-sizing: auto;
         font-variation-settings: 700;
         padding-left: 10px;
     }

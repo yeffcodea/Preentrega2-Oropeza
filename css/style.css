@@ -43,20 +43,22 @@
         align-items: center;
     }
 
-    header section nav div{
+    header section nav div {
         font-family: "Poiret One", sans-serif;
         font-weight: 1000;
-        font-size: 15px;
-        font-style: normal;
+        font-size: 15px;        
         color: black;
+        font-style: normal;
+        
+
     }
 
-    header section nav div div{
+    header section nav div div {
         display: flex;
         justify-content: space-between;
     }
 
-    header section nav div div ul{
+    header section nav div div ul {
         list-style: none;
         display: flex;
     }
@@ -113,7 +115,7 @@
         background-color: #c5d5e755;
     }
 
-    main section h3{
+    main section h3 {
         display: flex;
         font-family: "Poiret One", sans-serif;
         font-weight: 1000;
@@ -124,7 +126,7 @@
         padding-top: 15px;
         list-style: none;
     }
-    
+
     main a {
         text-decoration: none;
         color: black;
@@ -169,16 +171,16 @@
         font-style: normal;
         color: white;
     }
-        
-    main .marcas div{
+
+    main .marcas div {
         display: flex;
         justify-content: space-between;
         align-items: center;
         align-content: center;
         margin: 20px;
     }
-    
-    main .marcas div img{
+
+    main .marcas div img {
         width: 100px;
         height: 55px;
     }
@@ -194,7 +196,7 @@
         padding-top: 15px;
         list-style: none;
     } */
-        
+
     main .newtemp div {
         display: flex;
         justify-content: space-evenly;
@@ -228,7 +230,7 @@
         position: relative;
     }
 
-    main .newtemp div .horizontal img{
+    main .newtemp div .horizontal img {
         width: 100%;
         height: auto;
     }
@@ -244,7 +246,7 @@
         position: absolute;
         bottom: 1;
         width: 100%;
-    }    
+    }
 
     /*-------------------------------------------ABOUT US------------------------------------------------*/
 
@@ -254,8 +256,13 @@
         align-items: center;
     }
 
+    main .bio img {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
     main .bio div {
-        width: 50%;
+        margin-right: 35px;
     }
 
     main .bio div h2 {
@@ -318,11 +325,11 @@
     }
 
     /*----------------------------------------HOT SALE  Mismo diseno de Products-------------------------------------------------*/
-    main .titulo_grilla{
+    main .titulo_grilla {
         display: flex;
     }
 
-    main .titulo_grilla img{
+    main .titulo_grilla img {
         width: 300px;
         height: 400px;
     }
@@ -345,7 +352,7 @@
 
 
     /*----------------------------------------PRODUCTS-----------------------------------------------------*/
-    
+
     .fototitulo {
         width: 100%;
         height: 600px;
@@ -375,7 +382,7 @@
         font-style: normal;
         color: white;
     }
-    
+
 
 
     main .grid_productos {
@@ -440,7 +447,7 @@
         bottom: 45px;
     }
 
-    main .grid_productos .grid_item button{
+    main .grid_productos .grid_item button {
         position: absolute;
         bottom: 10px;
     }
@@ -450,7 +457,7 @@
         height: 100%;
     }
 
-    main .botones{
+    main .botones {
         background-color: white;
     }
 
@@ -637,7 +644,8 @@
         height: 50px;
 
     }
-/* 
+
+    /* 
     /*------------------------------MEDIA QUERY---------------------------*/
 
     /*------------------------------HEADER--------------------------*/
@@ -660,7 +668,7 @@
             font-size: 10px;
 
         }
-        
+
         header .menu .logo {
             width: auto;
         }
@@ -670,24 +678,24 @@
         header .menu .logo{
             width: 100px;
         }
-        
+
         header .menu .logo img{
             width: 100px;
             height: 75px;
-
+            
         }
-    }
+
         header .menu .login {
             height: 75px;
             width: 150px;
         }
-
+    
         header .menu .login ul {
             height: 75px;
             width: 150px;
         }
     
-        header .menu .login ul svg{
+        header .menu .login ul svg {
             width: 15px;
             height: 15px;
         }
@@ -699,46 +707,46 @@
         header .menu .login ul li a {
             font-size: 10px;
         }
-
+    }
 
     /*------------------------------INDEX---------------------------*/
-    @media screen and (max-width:900px){
-        main .horizontal h4{
+    @media screen and (max-width:900px) {
+        main .horizontal h4 {
             font-size: 25px;
         }
     }
 
-    @media screen and (max-width:700px){
-        main .horizontal h4{
+    @media screen and (max-width:700px) {
+        main .horizontal h4 {
             font-size: 15px;
         }
     }
-    
+
     @media screen and (max-width:500px) {
-        .hotsale{
+        .hotsale {
             width: auto;
             height: 600px;
         }
 
-        main .hotsale div h2{
+        main .hotsale div h2 {
             font-size: 35px;
         }
 
-        main .marcas h3{
+        main .marcas h3 {
             font-size: 25px;
         }
 
-        main .marcas div img{
+        main .marcas div img {
             width: 70px;
             height: 35px;
         }
 
-        main .newtemp{
+        main .newtemp {
             width: auto;
             height: auto;
         }
 
-        main .newtemp h3{
+        main .newtemp h3 {
             font-size: 25px;
         }
 
@@ -746,15 +754,15 @@
             width: 350px;
             height: 450px;
         }
-        
-        main .newtemp .contenedora{
+
+        main .newtemp .contenedora {
             width: auto;
             height: auto;
         }
     }
 
-    @media screen and (max-width:430px){
-        main .hotsale div h2{
+    @media screen and (max-width:430px) {
+        main .hotsale div h2 {
             font-size: 25px;
         }
 
@@ -766,192 +774,343 @@
     }
 
     /*------------------------------ABOUT US---------------------------*/
+    @media screen and (max-width:950px) {
+        main .bio {
+            flex-direction: column;
+        }
+
+        main .bio div {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        main .bio img {
+            width: 310px;
+            /* height: auto; */
+        }
+
+        main .bio div h2 {
+            font-size: 25px;
+        }
+
+        main .bio div p {
+            font-size: 15px;
+        }
+
+        main .posters h2 {
+            font-size: 25px;
+        }
+
+        main .posters .poster1 img {
+            width: 300px;
+            height: 350px;
+        }
+
+        main .posters .poster2 img {
+            width: 300px;
+            height: 300px;
+        }
+    }
 
     /*------------------------------HOTSALE---------------------------*/
-
-    /*------------------------------PRODUCTS---------------------------*/
-    @media screen and (max-width:1100px){
-        main .grid_item h4{
-            font-size: 15px;
-        }
-
-        main .filtros h4 {
-            font-size: 22px;
-        }
-    
-        main .filtros label {
-            font-size: 13px;
-        }
-
-        main .grid_item button{
-            font-size: 11px;
-        }
-
-        main .grid_productos {
-            grid-template-columns: 0.5fr 1fr 1fr;
-            grid-template-rows: repeat(3, 1fr);
-            margin-right: 65px;
-        }
-
-        .filtros {
-            grid-row-start: 1;
-            grid-row-end: 6;
+    @media screen and (max-width:1500px) {
+        main .titulo_grilla img {
+            width: 250px;
+            height: 350px;
         }
     }
 
-    @media screen and (max-width:900px){
-        main .marcas div img{
-            width: 75px;
-            height: 35px;
-        }
-    }
-
-    @media screen and (max-width:680px){
-        main .grid_productos {
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.12fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            margin-right: 15px;
+    @media screen and (max-width:1260px) {
+        main .titulo_grilla img {
+            width: 200px;
+            height: 300px;
         }
 
-        .filtros {
-            grid-row-start: 1;
-            grid-row-end: 1;
-            display: flex;
-        }
+        @media screen and (max-width:1015px) {
+            main .titulo_grilla img {
+                width: 160px;
+                height: 260px;
+            }
 
-        .filtros form{
-            flex-direction: row;
-            width: 460px;
-            justify-content: space-evenly;
-        }
-    }
+            @media screen and (max-width:860px) {
+                main .titulo_grilla img {
+                    width: 140px;
+                    height: 240px;
+                }
 
-    @media screen and (max-width:480px){
-        .filtros form{
-            width: 340px;
-        }
-    }
+                @media screen and (max-width:715px) {
+                    main .titulo_grilla img {
+                        width: 110px;
+                        height: 210px;
+                    }
 
+                    @media screen and (max-width:550px) {
+                        main .titulo_grilla img {
+                            width: 80px;
+                            height: 150px;
+                        }
+                    }
 
+                    /*------------------------------PRODUCTS---------------------------*/
+                    @media screen and (max-width:1100px) {
+                        main .grid_item h4 {
+                            font-size: 15px;
+                        }
 
-    @media screen and (max-width:455px){
-        main .grid_item h4{
-            font-size: 10px;
-            bottom: 35px;
-        }
+                        main .filtros h4 {
+                            font-size: 22px;
+                        }
 
-        main .filtros h4 {
-            font-size: 18px;
-        }
-    
-        main .filtros label {
-            font-size: 8px;
-        }
+                        main .filtros label {
+                            font-size: 13px;
+                        }
 
-        main .grid_item button{
-            font-size: 8px;
-        }
+                        main .grid_item button {
+                            font-size: 11px;
+                        }
 
-        main .filtros form label input{
-            width: 9px;
-            height: 9px;
-        }
+                        main .grid_productos {
+                            grid-template-columns: 0.5fr 1fr 1fr;
+                            grid-template-rows: repeat(3, 1fr);
+                            margin-right: 65px;
+                        }
 
-        main .marcas div img{
-            width: 45px;
-            height: 20px;
-        }
+                        .filtros {
+                            grid-row-start: 1;
+                            grid-row-end: 6;
+                        }
+                    }
 
-        main .fototitulo div h2 {
-            font-size: 35px;
-        }
-    }
+                    @media screen and (max-width:900px) {
+                        main .marcas div img {
+                            width: 75px;
+                            height: 35px;
+                        }
+                    }
 
-    /*------------------------------CONTACT---------------------------*/
+                    @media screen and (max-width:680px) {
+                        main .grid_productos {
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 0.12fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+                        }
 
-    /*------------------------------FOOTER---------------------------*/
-    @media screen and (max-width:800px) {
-        footer .contacto svg{
-            width: 18px;
-            height: 18px;
-        }
-        
-        footer .contacto a{
-            font-size: 13px;
-        }
+                        main .grid_productos .grid_item {
+                            width: 580px;
+                            height: 650px;
+                        }
 
-        footer .logofooter div img {
-            width: 150px;
-            height: 80px;
-        }
-    
-        footer .logofooter div h4{
-            font-size: 20px;
-        }
-        
-        footer .redes {
-            /* flex-direction: column; */
-            width: 80px;
-            height: 116px;
-        }
+                        main .grid_productos .filtros {
+                            grid-row-start: 1;
+                            grid-row-end: 1;
+                            display: flex;
+                        }
 
-        footer .redes .instagram{
-            width: 40px;
-            height: 40px;
-        }
+                        main .grid_productos .filtros form {
+                            flex-direction: row;
+                            width: 600px;
+                            justify-content: space-evenly;
+                        }
+                    }
 
-        footer .redes .whatsapp{
-            width: 40px;
-            height: 40px;
-        }
+                    @media screen and (max-width:615px) {
+                        main .grid_productos .grid_item {
+                            width: 480px;
+                            height: 550px;
+                        }
 
-        footer .redes .tiktok{
-            width: 40px;
-            height: 40px;
-        }
+                        main .filtros {
+                            width: 400px;
+                        }
+                    }
 
-        footer .redes div a svg{
-            width: 25px;
-            height: 25px;
-        }
-    }
-    
-    @media screen and (max-width:560px) {
-        footer .contacto a{
-            font-size: 10px;
-        }
+                    @media screen and (max-width:510px) {
+                        main .grid_productos .grid_item {
+                            width: 380px;
+                            height: 450px;
+                        }
+                    }
 
-        footer .logofooter div img {
-            width: 120px;
-            height: 60px;
-        }
-    
-        footer .logofooter div h4{
-            font-size: 15px;
-        }
-        
-        footer .redes {
-            width: 50px;
-            height: 86px;
-        }
+                    @media screen and (max-width:480px) {
+                        main .filtros form {
+                            width: 340px;
+                        }
+                    }
 
-        footer .redes .instagram{
-            width: 30px;
-            height: 30px;
-        }
+                    @media screen and (max-width:455px) {
+                        main .grid_item h4 {
+                            font-size: 10px;
+                            bottom: 35px;
+                        }
 
-        footer .redes .whatsapp{
-            width: 30px;
-            height: 30px;
-        }
+                        main .filtros h4 {
+                            font-size: 18px;
+                        }
 
-        footer .redes .tiktok{
-            width: 30px;
-            height: 30px;
-        }
+                        main .filtros label {
+                            font-size: 8px;
+                        }
 
-        footer .redes div a svg{
-            width: 20px;
-            height: 20px;
-        }
-    }
+                        main .grid_item button {
+                            font-size: 8px;
+                        }
+
+                        main .filtros form label input {
+                            width: 9px;
+                            height: 9px;
+                        }
+
+                        main .marcas div img {
+                            width: 45px;
+                            height: 20px;
+                        }
+
+                        main .fototitulo div h2 {
+                            font-size: 35px;
+                        }
+                    }
+
+                    @media screen and (max-width:410px) {
+                        main .grid_productos .grid_item {
+                            width: 280px;
+                            height: 350px;
+                        }
+
+                        main .filtros {
+                            width: 300px;
+                        }
+                    }
+
+                    /*------------------------------CONTACT---------------------------*/
+                    @media screen and (max-width:660px) {
+                        main .formulario div h3 {
+                            font-size: 30px;
+                        }
+
+                        main .formulario div p {
+                            font-size: 17px;
+                        }
+
+                        main .formulario .form .email input {
+                            width: 380px;
+                            height: 40px;
+                        }
+
+                        main .formulario .form .email ::placeholder {
+                            font-size: 10px;
+                        }
+
+                        main .formulario .form .boton_suscribir input {
+                            font-size: 10px;
+                            width: 50px;
+                            height: 40px;
+                        }
+                    }
+
+                    @media screen and (max-width:440px) {
+                        main .formulario div h3 {
+                            font-size: 25px;
+                        }
+
+                        main .formulario div p {
+                            font-size: 15px;
+                        }
+
+                        main .formulario .form .email input {
+                            width: 280px;
+                            height: 30px;
+                        }
+
+                        main .formulario .form .boton_suscribir input {
+                            font-size: 10px;
+                            height: 30px;
+                        }
+                    }
+
+                    /*------------------------------FOOTER---------------------------*/
+                    @media screen and (max-width:800px) {
+                        footer .contacto svg {
+                            width: 18px;
+                            height: 18px;
+                        }
+
+                        footer .contacto a {
+                            font-size: 13px;
+                        }
+
+                        footer .logofooter div img {
+                            width: 150px;
+                            height: 80px;
+                        }
+
+                        footer .logofooter div h4 {
+                            font-size: 20px;
+                        }
+
+                        footer .redes {
+                            /* flex-direction: column; */
+                            width: 80px;
+                            height: 116px;
+                        }
+
+                        footer .redes .instagram {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        footer .redes .whatsapp {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        footer .redes .tiktok {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        footer .redes div a svg {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+
+                    @media screen and (max-width:560px) {
+                        footer .contacto a {
+                            font-size: 10px;
+                        }
+
+                        footer .logofooter div img {
+                            width: 120px;
+                            height: 60px;
+                        }
+
+                        footer .logofooter div h4 {
+                            font-size: 15px;
+                        }
+
+                        footer .redes {
+                            width: 50px;
+                            height: 86px;
+                        }
+
+                        footer .redes .instagram {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        footer .redes .whatsapp {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        footer .redes .tiktok {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        footer .redes div a svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }

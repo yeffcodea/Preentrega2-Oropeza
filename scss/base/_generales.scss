@@ -8,3 +8,72 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*---Variables---*/
+$color-principal: #FFFFFF;
+$color-secundario:#c5d5e755;
+$color-terciario: rgba(11, 18, 71, 0.674);
+
+
+
+/*---Listas---*/
+
+$colores:
+#FFFFFF,
+#c5d5e755,
+rgba(11, 18, 71, 0.674);
+
+$font-size:
+8px,
+10px,
+11px
+13px,
+15px,
+16px,
+17px,
+18px,
+20px,
+22px,
+25px,
+30px,
+35px,
+50px;
+
+$font-family:
+"Poiret One", sans-serif,
+"Advent Pro", sans-serif;
+
+$font-weight:
+1000,
+700,
+600,
+500,
+400,
+100;
+
+$font-color:
+black,
+white;
+
+
+/*---Extend---*/
+%flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/*---Mixin---*/
+@mixin fuente($font-family, $font-weight, $font-size, $font-color) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+/*---mapas---*/
+
+

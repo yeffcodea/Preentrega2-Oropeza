@@ -7,17 +7,12 @@ header {
     width: auto;
 
     section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex-between;
 
         nav {
             div {
-                font-family: "Poiret One", sans-serif;
-                font-weight: 1000;
-                font-size: 15px;
-                font-style: normal;
-                color: black;
+                @include fuente("Poiret One", 1000, 15px, black);
+                font-style: normal;                
 
                 div {
                     display: flex;

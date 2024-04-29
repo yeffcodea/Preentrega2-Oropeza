@@ -1,9 +1,7 @@
 footer {
     background-color: #f6f8fb;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    @extend %flex-between;
+    align-content: center;    
     margin-top: 1px;
     padding: 20px;
     flex-wrap: wrap;

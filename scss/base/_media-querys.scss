@@ -1,17 +1,12 @@
 /*------------------------------HEADER--------------------------*/
 @media screen and (max-width:1230px) {
-    header {
-        section {
-            .logo {
-                width: 400px;
-            }
-        }
+    .logo {
+        width: 400px;
     }
-
 }
 
 @media screen and (max-width:1076px) {
-    header section .logo {
+    .logo {
         width: 300px;
     }
 }
@@ -19,65 +14,63 @@
 @media screen and (max-width:1000px) {
     header section nav div {
         font-size: 10px;
-
     }
+}
 
-    header section .logo {
-        width: auto;
-    }
+.logo {
+    width: auto;
 }
 
 @media screen and (max-width:500px) {
-    header section .logo {
+    .logo {
         width: 100px;
     }
 
-    header section .logo img {
+    .logo img {
         width: 100px;
         height: 75px;
-
     }
-}
 
-header section .login {
-    height: 75px;
-    width: 150px;
-}
-
-header section .login ul {
-    height: 75px;
-    width: 150px;
-}
-
-header section .login ul svg {
-    width: 15px;
-    height: 15px;
-}
-
-header section .login ul li {
-    width: 45px;
-}
-
-header section .login ul li a {
-    font-size: 10px;
+    .login {
+        height: 75px;
+        width: 150px;
+    }
+    
+    .login ul {
+        height: 75px;
+        width: 150px;
+    }
+    
+    .login ul svg {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .login ul li {
+        width: 45px;
+    }
+    
+    .login ul li a {
+        font-size: 10px;
+    }
 }
 
 
 /*------------------------------INDEX---------------------------*/
 @media screen and (max-width:900px) {
-    main .horizontal h4 {
+    main .newtemp div .horizontal h4 {
         font-size: 25px;
     }
 }
 
 @media screen and (max-width:700px) {
-    main .horizontal h4 {
+    main .newtemp div .horizontal h4 {
         font-size: 15px;
     }
 }
 
 @media screen and (max-width:500px) {
-    .hotsale {
+    main .hotsale {
         width: auto;
         height: 600px;
     }
@@ -128,24 +121,104 @@ header section .login ul li a {
 }
 
 /*------------------------------ABOUT US---------------------------*/
+@media screen and (max-width:950px) {
+    main .bio {
+        flex-direction: column;
+    }
 
-/*------------------------------HOTSALE---------------------------*/
+    main .bio div {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
 
-/*------------------------------PRODUCTS---------------------------*/
-@media screen and (max-width:1100px) {
-    main .grid_item h4 {
+@media screen and (max-width:550px) {
+    main .bio img {
+        width: 310px;
+        /* height: auto; */
+    }
+
+    main .bio div h2 {
+        font-size: 25px;
+    }
+
+    main .bio div p {
         font-size: 15px;
     }
 
-    main .filtros h4 {
+    main .posters h2 {
+        font-size: 25px;
+    }
+
+    main .posters .poster1 img {
+        width: 300px;
+        height: 350px;
+    }
+
+    main .posters .poster2 img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/*------------------------------HOTSALE---------------------------*/
+@media screen and (max-width:1500px) {
+    main .titulo_grilla img {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:1260px) {
+    main .titulo_grilla img {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:1015px) {
+    main .titulo_grilla img {
+        width: 160px;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    main .titulo_grilla img {
+        width: 140px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width:715px) {
+    main .titulo_grilla img {
+        width: 110px;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    main .titulo_grilla img {
+        width: 80px;
+        height: 150px;
+    }
+}
+
+/*------------------------------PRODUCTS---------------------------*/
+@media screen and (max-width:1100px) {
+    main .grid_productos .grid_item h4 {
+        font-size: 15px;
+    }
+
+    main .grid_productos .filtros h4 {
         font-size: 22px;
     }
 
-    main .filtros label {
+    main .grid_productos .filtros label {
         font-size: 13px;
     }
 
-    main .grid_item button {
+    main .grid_productos .grid_item button {
         font-size: 11px;
     }
 
@@ -155,7 +228,7 @@ header section .login ul li a {
         margin-right: 65px;
     }
 
-    .filtros {
+    main .grid_productos .filtros {
         grid-row-start: 1;
         grid-row-end: 6;
     }
@@ -171,55 +244,75 @@ header section .login ul li a {
 @media screen and (max-width:680px) {
     main .grid_productos {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.12fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin-right: 15px;
+        grid-template-rows: 0.12fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     }
 
-    .filtros {
+    main .grid_productos .grid_item {
+        width: 580px;
+        height: 650px;
+    }
+
+    main .grid_productos .filtros {
         grid-row-start: 1;
         grid-row-end: 1;
         display: flex;
     }
 
-    .filtros form {
+    main .grid_productos .filtros form {
         flex-direction: row;
-        width: 460px;
+        width: 600px;
         justify-content: space-evenly;
     }
 }
 
+@media screen and (max-width:615px) {
+    main .grid_productos .grid_item {
+        width: 480px;
+        height: 550px;
+    }
+
+    main .grid_productos .filtros {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    main .grid_productos .grid_item {
+        width: 380px;
+        height: 450px;
+    }
+}
+
 @media screen and (max-width:480px) {
-    .filtros form {
+    main .grid_productos .filtros form {
         width: 340px;
     }
 }
 
-
-
 @media screen and (max-width:455px) {
-    main .grid_item h4 {
+    main .grid_productos .grid_item h4 {
         font-size: 10px;
         bottom: 35px;
     }
 
-    main .filtros h4 {
+    main .grid_productos .filtros h4 {
         font-size: 18px;
     }
 
-    main .filtros label {
+    main .grid_productos .filtros label {
         font-size: 8px;
     }
 
-    main .grid_item button {
+    main .grid_productos .grid_item button {
         font-size: 8px;
     }
 
-    main .filtros form label input {
+    main .grid_productos .filtros form label input {
         width: 9px;
         height: 9px;
     }
 
-    main .marcas div img {
+    main .grid_productos .marcas div img {
         width: 45px;
         height: 20px;
     }
@@ -229,7 +322,62 @@ header section .login ul li a {
     }
 }
 
+@media screen and (max-width:410px) {
+    main .grid_productos .grid_item {
+        width: 280px;
+        height: 350px;
+    }
+
+    main .grid_productos .filtros {
+        width: 300px;
+    }
+}
+
 /*------------------------------CONTACT---------------------------*/
+@media screen and (max-width:660px) {
+    main .formulario .suscribete h3 {
+        font-size: 30px;
+    }
+
+    main .formulario .suscribete p {
+        font-size: 17px;
+    }
+
+    main .formulario .form .email input {
+        width: 380px;
+        height: 40px;
+    }
+
+    main .formulario .form .email input ::placeholder {
+        font-size: 10px;
+    }
+
+    main .formulario .form .boton_suscribir input {
+        font-size: 10px;
+        width: 50px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    main .formulario .suscribete h3 {
+        font-size: 25px;
+    }
+
+    main .formulario .suscribete p {
+        font-size: 15px;
+    }
+
+    main .formulario .form .email input {
+        width: 280px;
+        height: 30px;
+    }
+
+    main .formulario .form .boton_suscribir input {
+        font-size: 10px;
+        height: 30px;
+    }
+}
 
 /*------------------------------FOOTER---------------------------*/
 @media screen and (max-width:800px) {
