@@ -15,7 +15,7 @@ main{
         width: 100%;
         height: 570px;
         text-align: center;
-        background-image: url(../img/index_portada_hombre.jpg);
+        background: linear-gradient(rgba(128, 128, 128, 0.147), rgba(128, 128, 128, 0.256)),url(../img/index_portada_hombre.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -121,36 +121,49 @@ main{
         }
     }
 
-    .posters{
+    .contenedor_posters{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        padding: 50px;
+
+
         h2{
             @include fuente("Advent Pro", 500, 50px, black);
             font-style: normal;
             font-optical-sizing: auto;
             font-variation-settings: 700;
-            margin-bottom: 20px;
-            margin-top: 20px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: auto;
         }
 
-        .poster1{
-            @extend %flex-between;
-            margin-bottom: 20px;
-            img{
-                width: 500px;
-                height: 550px;
+        .posters{
+            display: flex;        
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+    
+            .poster1{
+                @extend %flex-between;
+                margin-bottom: 20px;
+                img{
+                    width: 500px;
+                    height: 550px;
+                }
             }
-        }
-
-        .poster2{
-            img{
-                width: 500px;
-                height: 500px;
+    
+            .poster2{
+                img{
+                    width: 500px;
+                    height: 550px;
+                }
             }
         }
     }
+    
+    
 
     /*----------------------------------------HOT SALE  Mismo diseno de Products-------------------------------------------------*/
     .titulo_grilla{
@@ -170,7 +183,7 @@ main{
         width: 100%;
         height: 600px;
         text-align: center;
-        background-image: url(../img/productos_cover.png);
+        background: linear-gradient(rgba(128, 128, 128, 0.319), rgba(128, 128, 128, 0.308)) ,url(../img/productos_cover.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -197,7 +210,7 @@ main{
         column-gap: 15px;
         row-gap: 15px;
         margin-left: 15px;
-        margin-right: 65px;
+        margin-right: 15px;
         .filtros{
             grid-row-start: 1;
             grid-row-end: 4;
@@ -262,7 +275,7 @@ main{
         color: white;
         font-style: normal;
         font-variation-settings: 700;
-        background-image: url(../img/contact_fondo.jpeg);
+        background: linear-gradient(rgba(128, 128, 128, 0.282), rgba(128, 128, 128, 0.277)) ,url(../img/contact_fondo.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -9,7 +9,7 @@
 /*---Variables---*/
 /*---Listas---*/
 /*---Extend---*/
-header section, main .marcas div, main .posters .poster1, footer {
+header section, main .marcas div, main .contenedor_posters .posters .poster1, footer {
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -35,40 +35,38 @@ header {
       header section nav div div ul {
         list-style: none;
         display: flex; }
-
-.logo {
-  width: 550px;
-  height: auto; }
-  .logo img {
-    width: 180px;
-    height: 95px; }
-
-.login {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  height: 110px;
-  width: 200px; }
-  .login ul {
+  header section .logo {
+    width: 550px;
+    height: auto; }
+    header section .logo img {
+      width: 180px;
+      height: 95px; }
+  header section .login {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    text-align: center;
     height: 110px;
     width: 200px; }
-    .login ul li {
-      list-style: none;
-      justify-content: space-between;
-      align-items: flex-start;
-      color: black;
-      font-family: "Poiret One", sans-serif;
-      font-weight: 1000;
-      font-style: normal;
-      width: 80px;
-      flex-wrap: wrap; }
-      .login ul li a {
-        text-decoration: none;
+    header section .login ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 110px;
+      width: 200px; }
+      header section .login ul li {
+        list-style: none;
+        justify-content: space-between;
+        align-items: flex-start;
         color: black;
-        font-size: 15px; }
+        font-family: "Poiret One", sans-serif;
+        font-weight: 1000;
+        font-style: normal;
+        width: 80px;
+        flex-wrap: wrap; }
+        header section .login ul li a {
+          text-decoration: none;
+          color: black;
+          font-size: 15px; }
 
 main {
   background-color: #c5d5e755;
@@ -91,7 +89,7 @@ main {
     width: 100%;
     height: 570px;
     text-align: center;
-    background-image: url(../img/index_portada_hombre.jpg);
+    background: linear-gradient(rgba(128, 128, 128, 0.147), rgba(128, 128, 128, 0.256)), url(../img/index_portada_hombre.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,12 +181,11 @@ main {
         font-variation-settings: 500;
         font-style: italic;
         line-height: 1.6; }
-  main .posters {
+  main .contenedor_posters {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-    main .posters h2 {
+    padding: 50px; }
+    main .contenedor_posters h2 {
       font-family: "Advent Pro";
       font-weight: 500;
       font-size: 50px;
@@ -196,16 +193,24 @@ main {
       font-style: normal;
       font-optical-sizing: auto;
       font-variation-settings: 700;
-      margin-bottom: 20px;
-      margin-top: 20px; }
-    main .posters .poster1 {
-      margin-bottom: 20px; }
-      main .posters .poster1 img {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: auto; }
+    main .contenedor_posters .posters {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+      main .contenedor_posters .posters .poster1 {
+        margin-bottom: 20px; }
+        main .contenedor_posters .posters .poster1 img {
+          width: 500px;
+          height: 550px; }
+      main .contenedor_posters .posters .poster2 img {
         width: 500px;
         height: 550px; }
-    main .posters .poster2 img {
-      width: 500px;
-      height: 500px; }
   main .titulo_grilla {
     display: flex;
     justify-content: center;
@@ -219,7 +224,7 @@ main {
     width: 100%;
     height: 600px;
     text-align: center;
-    background-image: url(../img/productos_cover.png);
+    background: linear-gradient(rgba(128, 128, 128, 0.319), rgba(128, 128, 128, 0.308)), url(../img/productos_cover.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -246,7 +251,7 @@ main {
     column-gap: 15px;
     row-gap: 15px;
     margin-left: 15px;
-    margin-right: 65px; }
+    margin-right: 15px; }
     main .grid_productos .filtros {
       grid-row-start: 1;
       grid-row-end: 4; }
@@ -306,7 +311,7 @@ main {
     color: white;
     font-style: normal;
     font-variation-settings: 700;
-    background-image: url(../img/contact_fondo.jpeg);
+    background: linear-gradient(rgba(128, 128, 128, 0.282), rgba(128, 128, 128, 0.277)), url(../img/contact_fondo.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -403,7 +408,8 @@ footer {
     display: flex; }
     footer .logofooter div img {
       width: 180px;
-      height: 80px; }
+      height: 80px;
+      margin: 0px auto; }
     footer .logofooter div h4 {
       font-family: "Poiret One", sans-serif;
       font-weight: 1000;
@@ -425,38 +431,35 @@ footer {
 
 /*------------------------------HEADER--------------------------*/
 @media screen and (max-width: 1230px) {
-  .logo {
+  header section .logo {
     width: 400px; } }
 
 @media screen and (max-width: 1076px) {
-  .logo {
+  header section .logo {
     width: 300px; } }
 
 @media screen and (max-width: 1000px) {
   header section nav div {
     font-size: 10px; } }
 
-.logo {
-  width: auto; }
-
 @media screen and (max-width: 500px) {
-  .logo {
+  header section .logo {
     width: 100px; }
-  .logo img {
+  header section .logo img {
     width: 100px;
     height: 75px; }
-  .login {
+  header section .login {
     height: 75px;
     width: 150px; }
-  .login ul {
+  header section .login ul {
     height: 75px;
     width: 150px; }
-  .login ul svg {
+  header section .login ul svg {
     width: 15px;
     height: 15px; }
-  .login ul li {
+  header section .login ul li {
     width: 45px; }
-  .login ul li a {
+  header section .login ul li a {
     font-size: 10px; } }
 
 /*------------------------------INDEX---------------------------*/
@@ -568,7 +571,7 @@ footer {
   main .grid_productos {
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    margin-right: 65px; }
+    margin-right: 15px; }
   main .grid_productos .filtros {
     grid-row-start: 1;
     grid-row-end: 6; } }
@@ -581,14 +584,15 @@ footer {
 @media screen and (max-width: 680px) {
   main .grid_productos {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.12fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
+    grid-template-rows: 0.12fr 1fr 1fr 1fr 1fr 1fr 1fr; }
   main .grid_productos .grid_item {
-    width: 580px;
-    height: 650px; }
+    width: 480px;
+    height: 550px; }
   main .grid_productos .filtros {
     grid-row-start: 1;
     grid-row-end: 1;
-    display: flex; }
+    display: flex;
+    padding: 15px; }
   main .grid_productos .filtros form {
     flex-direction: row;
     width: 600px;

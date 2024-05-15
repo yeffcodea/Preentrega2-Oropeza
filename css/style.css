@@ -288,14 +288,14 @@
         line-height: 1.6;
     }
 
-    main .posters {
+    main .contenedor_posters {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
 
-    main .posters h2 {
+    main .contenedor_posters h2 {
         font-family: "Advent Pro", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
@@ -305,6 +305,12 @@
         font-size: 50px;
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+
+    main .posters{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     main .posters .poster1 {
